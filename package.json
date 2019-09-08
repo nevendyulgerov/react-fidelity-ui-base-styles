@@ -1,0 +1,43 @@
+{
+  "name": "react-fidelity-ui-base-styles",
+  "version": "0.0.1",
+  "description": "Base styles for React Fidelity UI",
+  "main": "input.js",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.11",
+    "cssnano": "^4.1.10",
+    "eslint": "^4.11.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^7.0.14",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^6.0.6",
+    "stylelint": "^9.10.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-livereload-plugin": "^2.1.1"
+  },
+  "dependencies": {
+    "postcss-cssnext": "^3.1.0"
+  },
+  "scripts": {
+    "start": "webpack --config webpack-dev.config --watch",
+    "server": "python -m http.server",
+    "dist": "webpack --config webpack-prod.config.js -p"
+  },
+  "keywords": [
+    "react",
+    "react-ui",
+    "react-fidelity-ui",
+    "base-styles",
+    "material-ui",
+    "material-design"
+  ],
+  "author": "Neven Dyulgerov",
+  "license": "MIT"
+}

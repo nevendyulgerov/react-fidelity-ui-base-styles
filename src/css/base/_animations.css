@@ -1,0 +1,185 @@
+/* animation classes */
+.FadeInDown {
+  animation: FadeInDown 0.4s 1 ease;
+}
+
+.FadeInUp {
+  animation: FadeInUp 0.4s 1 ease;
+}
+
+.SlideInDown {
+  animation: SlideInDown 0.4s 1 ease;
+}
+
+.SlideInUp {
+  animation: SlideInUp 0.4s 1 ease;
+}
+
+.Fade {
+  animation: Fade 0.4s 1 ease;
+}
+
+.FadeOut {
+  animation: FadeOut 0.4s 1 ease;
+}
+
+.FadeInDownSmall {
+  animation: FadeInDownSmall 0.4s 1 ease;
+}
+
+/* animations */
+@keyframes FadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes FadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes SlideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes SlideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes FadeInDownSmall {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Follow {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes Tab {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes NotificationNew {
+  0% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1.5);
+  }
+
+  80% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes SuccessCircle {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+
+  100% {
+    stroke-dashoffset: 480px;
+  }
+}
+
+@keyframes SuccessTick {
+  0% {
+    stroke-dashoffset: 50px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,130 @@
+.text-align {
+  &--justify {
+    text-align: justify !important;
+  }
+
+  &--left {
+    text-align: left !important;
+  }
+
+  &--right {
+    text-align: right !important;
+  }
+
+  &--center {
+    text-align: center !important;
+  }
+
+  @media (--viewport-sm-min) {
+    &--sm-justify {
+      text-align: justify !important;
+    }
+
+    &--sm-left {
+      text-align: left !important;
+    }
+
+    &--sm-right {
+      text-align: right !important;
+    }
+
+    &--sm-center {
+      text-align: center !important;
+    }
+  }
+
+  @media (--viewport-md-min) {
+    &--md-justify {
+      text-align: justify !important;
+    }
+
+    &--md-left {
+      text-align: left !important;
+    }
+
+    &--md-right {
+      text-align: right !important;
+    }
+
+    &--md-center {
+      text-align: center !important;
+    }
+  }
+
+  @media (--viewport-lg-min) {
+    &--lg-justify {
+      text-align: justify !important;
+    }
+
+    &--lg-left {
+      text-align: left !important;
+    }
+
+    &--lg-right {
+      text-align: right !important;
+    }
+
+    &--lg-center {
+      text-align: center !important;
+    }
+  }
+
+  @media (--viewport-xl-min) {
+    &--xl-justify {
+      text-align: justify !important;
+    }
+
+    &--xl-left {
+      text-align: left !important;
+    }
+
+    &--xl-right {
+      text-align: right !important;
+    }
+
+    &--xl-center {
+      text-align: center !important;
+    }
+  }
+}
+
+/* transformation */
+.text-transform {
+  &--lowercase {
+    text-transform: lowercase !important;
+  }
+
+  &--uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &--capitalize {
+    text-transform: capitalize !important;
+  }
+}
+
+/*  weight */
+.font-weight {
+  font-weight: var(--font-weight) !important;
+
+  &--bold {
+    font-weight: var(--font-weight--bold) !important;
+  }
+
+  &--bolder {
+    font-weight: var(--font-weight--bolder) !important;
+  }
+}
+
+/* size */
+.font-size {
+  font-size: var(--font-size);
+
+  &--sm {
+    font-size: var(--font-size--sm);
+  }
+
+  &--lg {
+    font-size: var(--font-size--lg);
+  }
+}

@@ -1,0 +1,165 @@
+html {
+  font-size: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth; /* TODO: Firefox bug: scrollbars are visible always :( */
+}
+
+body {
+  color: var(--body-color);
+  background-color: var(--body-color-bg);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--font-line-height);
+}
+
+/* Text Tags */
+
+p,
+dl,
+address,
+ul,
+ol {
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  margin-bottom: var(--spacer);
+}
+
+code,
+pre {
+  color: #ff3860;
+  background-color: #fff0f0;
+  font-size: 1.215em;
+  font-family: monospace;
+  font-weight: 400;
+  padding: 0.25em 0.5em 0.25em;
+  border-radius: var(--border-radius);
+}
+
+/* Links */
+
+a {
+  color: var(--body-color-link);
+  break-inside: avoid;
+  break-before: avoid-column;
+  break-after: always;
+  text-decoration: var(--link-decoration);
+
+  &:hover {
+    text-decoration: var(--link-decoration--hover);
+  }
+}
+
+/* Small */
+small {
+  font-size: 0.833em;
+}
+
+/* hr */
+hr {
+  background: transparent;
+  margin: calc(var(--spacer) * 2) 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid var(--body-color-border);
+}
+
+/* Headings */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  color: var(--body-color--heading);
+  font-weight: var(--font-weight--bold);
+  margin: 0 0 1.25rem 0;
+  line-height: 1.15;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+.h1 {
+  font-size: calc(var(--h1-min) * var(--to-rem));
+}
+
+h2,
+.h2 {
+  font-size: calc(var(--h2-min) * var(--to-rem));
+}
+
+h3,
+.h3 {
+  font-size: calc(var(--h3-min) * var(--to-rem));
+}
+
+h4,
+.h4 {
+  font-size: calc(var(--h4-min) * var(--to-rem));
+}
+
+h5,
+.h5 {
+  font-size: calc(var(--h5-min) * var(--to-rem));
+}
+
+@media (--viewport-sm-min) {
+  h1,
+  .h1 {
+    font-size: var(--h1-responsive);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--h2-responsive);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--h3-responsive);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--h4-responsive);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--h5-responsive);
+  }
+}
+
+@media (--viewport-xl-min) {
+  h1,
+  .h1 {
+    font-size: calc(var(--h1-max) * var(--to-rem));
+  }
+
+  h2,
+  .h2 {
+    font-size: calc(var(--h2-max) * var(--to-rem));
+  }
+
+  h3,
+  .h3 {
+    font-size: calc(var(--h3-max) * var(--to-rem));
+  }
+
+  h4,
+  .h4 {
+    font-size: calc(var(--h4-max) * var(--to-rem));
+  }
+
+  h5,
+  .h5 {
+    font-size: calc(var(--h5-max) * var(--to-rem));
+  }
+}
